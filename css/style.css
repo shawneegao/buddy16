@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+#hideAll
+ {
+   position: fixed;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+
+ }
+#rat_left
+{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.row{
+  overflow: hidden !important;
+}
+.content{
+  height: 100vh !important;
+}
+#buddy-logo{
+  text-align: center;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:20000;
+  height:inherit;
+  margin-top:10%;
+  margin-bottom: 10%;
+}
+#video-overlay{
+  background: blue;
+  opacity: 0.5;
+  	position: relative;
+  	z-index: 20;
+  	padding: 15%;
+width: 100%;
+height: 100%;
+animation: 4s animateOverlay ease-in-out infinite alternate;
+}
+#meet-buddy{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: #4080bf;
+  text-align:center;
+}
+
+#meet-buddy-header{
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 70px !important;
+  color: white;
+}
+#meet-buddy-caption{
+  font-size: 300%;
+    color: white;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-weight: 300;
+    margin: 40px;
+}
+#meet-buddy-image{
+  text-align: center;
+  height: 30%;
+  width: 30%;
+  display: inline-block;
+}
+
+#wall_3 {
+    text-align: center;
+    background: url(../img/bg_combo_reedit.jpg) no-repeat center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#wall_3_overlay{
+  text-align: center;
+}
+#overlay_furiness{
+  height: 100vh;
+}
+#wall_4 {
+    background: url(../img/genBG.jpg) no-repeat center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*************
+ISSUE STYLES
+*************/
+#issues{
+  padding-top: 30px;
+  padding-right:20px;
+  padding-bottom: 50px;
+  background-color: #d0eaef;
+  background-size: contain;
+}
+.issuesTitle{
+  text-align: center;
+}
+.issuesTitleImg{
+  width: 10%;
+  height: 10%;
+  padding-bottom: 50px;
+}
+.issuesTitleText
+{
+  color: darkslateblue !important;
+  font-size: 540%;
+}
+.issuesBlock{
+  margin-top: 5%;
+  padding-top: 50px;
+	z-index:-1;
+	height:650px;
+  text-align: center;
+}
+
+.issuesText{
+	opacity: 1;
+	text-align: center;
+  font-weight: bold;
+  color: white;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+.issuesHeader{
+  font-size: 300%;
+    overflow: visible;;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+.headerWrapper{
+	margin-top:40px;
+}
+.issuesDescription{
+	font-size: 300% !important;
+	padding:10px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.issuesImg-wrapper{
+    width: inherit;;
+    height: 60%;
+}
+.issuesImg{
+      width: 80%;
+      height: 80%;
+}
+#foreign_policy{
+  background-image:url("../img/foreign_policy_bg.jpg");
+}
+#health_care{
+	background-image:url("../img/health_care_bg.png");
+}
+#economy{
+	background-image:url("../img/economy_bg.png");
+}
+
+.break{
+	height: 147px;
+	background-image:url("../img/banner.png");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 15s linear infinite;
+}
+.video-crop{
+  height: 150% !important;
+  width: 100%;
+}
+.video-wrapper{
+}
+.polaroid-img{
+  width: 100%;
+  height: 100%;
+}
+.custom-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20000;
+}
+#treats-for-all{
+  width: 100%;
+  height:100%;
+}
+/**************
+THANK YOU
+***************/
+.donations{
+  padding-left: 6% !important;
+}
+.donation-thankyou-wrapper{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: url("../img/treats.jpg") no-repeat 10px -209px;
+  background-size: cover;
+  background-position-y: initial;
+  margin-left: -10px;
+  width: 105%;
+}
+.donationsHeader{
+  font-size: 60px;
+}
+.donations-radio{
+  height: 50% !important;
+  width: 70% !important;
+  color: white !important;
+  font-size: 250% !important;
+}
+.mt-radio{
+  font-size: 250%;
+}
+.treats-btn{
+  padding: 5% !important;
+}
+.donationsBlurb{
+  margin-top:5%;
+  margin-bottom:3%;
+  font-size: 280%;
+}
+.thank-you-header{
+  font-size: 400%;
+  padding: 0px !important;
+  background: white;
+  text-align: center;
+}
+.thank-you-text{
+  color:red !important;
+}
+.thank-you-content{
+  color: white;
+  background-size: cover;
+}
+.thank-you-list{
+  font-size: 30px;
+}
+.thank-you-item{
+  padding: 20px;
+  color: #e73232;
+}
+.current-donation{
+  color: black !important;
+}
+.thank-you{
+  background-size: cover;
+  padding: 0px !important;
+  color: white;
+}
+.donations-header{
+  margin-bottom: 45px;
+font-size: 60px;
+background-color: white;
+}
+.icon{
+  height: 20px;
+}
+#name{
+  width: 200px;
+  height: 40px;
+}
+
+.modal-body{
+  font-size: 300% !important;
+  color: black !important;
+}
+.modal-content{
+  background: url("../img/genBG.jpg") no-repeat center center;
+}
+.thank-you-row{
+  background: #ECECEC;
+}
+.thankyou-wrapper{
+  display: inline-block;
+}
+.knob-wrapper{
+  padding: 20px;
+  background: crimson;
+}
+.logo-small{
+  height: 150px;
+}
+.footer{
+  text-align: right;
+}
+.footer-text{
+  color: black !important;
+  font-size: 200% !important;
+
+}
+.thank-you-items{
+  margin-bottom: 5px;
+}
+/*************
+ANIMATION
+*************/
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: -100% 0; }
+}
+
+@keyframes animateOverlay {
+  0% {
+    background-color:white;
+  }
+  30% {
+    background-color:blue;
+  }
+  100% {
+    background-color:red;
+  }
+}

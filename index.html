@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Buddy'16</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="icon" type="image/ico" href="img/logo_slogan.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" rel="stylesheet" href="css/css3-animate-it.css" />
+    <link rel="stylesheet" type="text/css" rel="stylesheet" href="css/components.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+  <div style="display: none" id="hideAll">&nbsp;</div>
+    <main>
+        <div id="video-wrap" class="video-wrap">
+            <video preload="metadata" autoplay muted loop id="my-video">
+                <source src="img/mainLanding.mp4" type="video/mp4">
+            </video>
+            <div id="video-overlay">
+            </div>
+            <div id="buddy-logo">
+                <img class="buddylogoimage" src="img/logo_slogan.png"></img>
+            </div>
+        </div>
+        <div class = "row" id="meet-buddy">
+            <div class="col-sm-48 col-md-24 col-lg-12">
+                <div id="meet-buddy">
+                    <h2 id="meet-buddy-header">Meet Buddy</h2>
+                    <p id="meet-buddy-caption">A No Nonsense Presidential Candidate</p>
+                    <img id="meet-buddy-image" class="smallImg" src="img/meetbuddy_blue.png"></img>
+                </div>
+            </div>
+        </div>
+        <div id="issues" class="row animatedParent">
+          <div class="col-sm-48 col-md-24 col-lg-12">
+            <div class="issuesTitle">
+              <img class = "issuesTitleImg" src="img/issues_right.png" alt=" The Issues"/>
+              <span class="issuesTitleText"> The Issues </span>
+              <img class = "issuesTitleImg" id = "rat_left" src="img/issues_right.png" alt=" The Issues"/>
+            </div>
+          </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="issuesBlock animated bounceInUp slowest" id="health_care">
+                        <div class="issuesText issuesHeader"> Health Care </div>
+                        <p class="issuesText issuesDescription"> "Always Wear a Blanky!" </p>
+                          <div class = "issuesImg-wrapper">
+                            <img class="issuesImg" src="img/healthcare.png">
+                          </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="issuesBlock animated bounceInUp slowest" id="foreign_policy">
+                        <div class="issuesText issuesHeader"> Foreign Policy </div>
+                        <p class="issuesText issuesDescription"> "Do not let them cross the Border!" </p>
+                          <div class = "issuesImg-wrapper">
+                            <img class="issuesImg" src="img/foreignpolicy.png">
+                          </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="issuesBlock animated bounceInUp slowest" id="economy">
+                        <div class="issuesText issuesHeader"> Economy </div>
+                        <p class="issuesText issuesDescription"> "Rat only $9.99 at Pet Store!" </p>
+                        <div class = "issuesImg-wrapper">
+                            <img class="issuesImg" src="img/money.png">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="wall_3" class="content">
+          <img id ="overlay_furiness" src="img/wall_3_overlay_img.png"></img>
+        </div>
+        <div id="wall_4">
+            <div class="row">
+                <div class="break"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 animatedParent">
+                    <div id="polaroid_left" class="animated bounceInDown slowest">
+                        <img class="polaroid-img" src="img/troops_tolt.png">
+                    </div>
+                </div>
+                <!--SECOND VIDEO HERE-->
+                <div class="col-md-4">
+                    <div class="video-wrapper">
+                        <video class="video-crop" muted loop autoplay>
+                            <source src="img/treats.mp4"></source>
+                        </video>
+                    </div>
+                    <div class="custom-overlay">
+                        <img id="treats-for-all" src="img/current_bg.png"></img>
+                    </div>
+                </div>
+                <div class="col-md-4 animatedParent">
+                    <div id="polaroid_left" class="animated bounceInUp slowest">
+                        <img class="polaroid-img" src="img/right_polaroid.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="break"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-48 col-md-24 col-lg-12 donation-thankyou-wrapper">
+                <div id="thank-you-modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                Thank You for Your Generous Donation!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="oops-modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                Oops! Make sure you fill out your name and the number of treats to donate!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-offset-1 col-lg-7 donations">
+                    <div class="donationsHeader">Support My Campaign!</div>
+                    <div class="donationsBlurb">
+                        <p>Donate Treats and See You Name on the Thank You Board Below! </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group form-md-line-input">
+                            <div class="wrapper">
+                                <input type="text" class="donations-radio form-control" placeholder="Your Name Here" id="name">
+                                <div class="form-control-focus"> </div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class="col-lg-6 col-md-12">
+                               <div class="mt-radio-list">
+                                    <p class="mt-radio">
+                                        <input class="mt-radio-item" type="radio" name="treatNum" value="1" > 1 Treat
+                                    </p>
+                                    <p class="mt-radio">
+                                        <input class="mt-radio-item" type="radio" name="treatNum" value="2" > 2 Treats
+                                    </p>
+                                    <p class="mt-radio">
+                                        <input class="mt-radio-item" type="radio" name="treatNum" value="3" > 3 Treats
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <button type="button" id = "giveTreats" class="btn red-soft treats-btn" style="font-size:30px"> Yay Treats! </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class = "row thank-you-row">
+            <div class="col-lg-12 thank-you">
+                <div class="thank-you-wrapper">
+                  <div class = "row">
+                    <div class="thank-you-header col-lg-12">
+                      <span class="thank-you-text"> Thank You!</span>
+                      <span><img class = "logo-small" src = "img/logo_nobg_crop.png"></span>
+                      <span class = "thank-you-text"> Total Treats </span>
+                      <span class = "thank-you-text" id = "totalTreatNum"> </span>
+                    </div>
+                  </div>
+                    <div class="thank-you-list row">
+                    </div>
+                </div>
+            </div>
+          </div>
+            <div class=" row footer">
+                <div class="col-lg-12">
+                <span class="footer-text">Made by Shawnee Gao</span>
+              </div>
+            </div>
+    </main>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/backgroundVideo.js"></script>
+    <script src="js/css3-animate-it.js" type="text/javascript"></script>
+    <script src="js/knobs.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script>
+        $('#my-video').backgroundVideo({
+            pauseVideoOnViewLoss: false,
+            parallaxOptions: {
+                effect: 1.9
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
